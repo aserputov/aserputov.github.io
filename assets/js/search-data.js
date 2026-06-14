@@ -72,24 +72,77 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "books-the-godfather",
+            },{id: "post-flash-attention-writing-a-gpu-kernel-in-triton",
+        
+          title: "Flash Attention: Writing a GPU Kernel in Triton",
+        
+        description: "How Flash Attention avoids materializing the O(T²) attention matrix by tiling Q×K^T in GPU SRAM, with a from-scratch Triton kernel.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/flash-attention-from-scratch/";
+          
+        },
+      },{id: "post-pagedattention-virtual-memory-for-kv-cache",
+        
+          title: "PagedAttention: Virtual Memory for KV-Cache",
+        
+        description: "Why torch.cat creates O(n²) memory copies, and how PagedAttention eliminates them with pre-allocated page pools.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/pagedattention-from-scratch/";
+          
+        },
+      },{id: "post-kv-cache-why-naive-inference-is-o-n-and-how-caching-fixes-it",
+        
+          title: "KV-Cache: Why Naive Inference is O(n²) and How Caching Fixes It",
+        
+        description: "How KV-cache reduces autoregressive generation from O(n²) to O(n), with from-scratch implementation and 2.6x speedup benchmarks.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/kv-cache-from-scratch/";
+          
+        },
+      },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "projects-transformer-from-scratch",
+          title: 'Transformer From Scratch',
+          description: "Full transformer encoder-decoder — self-attention, multi-head attention, positional encoding, layer normalization.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/attention_from_scratch/";
+            },},{id: "projects-gpt-2-from-scratch",
+          title: 'GPT-2 From Scratch',
+          description: "Complete GPT-2 (124M) forward pass from scratch — loading real OpenAI weights, generating coherent text.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/gpt2_from_scratch/";
             },},{id: "projects-llm-inference-benchmark",
           title: 'LLM Inference Benchmark',
           description: "Benchmarking framework for inference throughput, latency, and memory across quantization levels on Apple Metal GPU.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/inference_benchmark/";
+            },},{id: "projects-inference-engine",
+          title: 'Inference Engine',
+          description: "From-scratch inference engine — KV-cache (2.6x), PagedAttention, Flash Attention (Triton GPU kernel), continuous batching.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/inference_engine/";
             },},{id: "projects-next-token-prediction-engine",
           title: 'Next-Token Prediction Engine',
           description: "Frequency-based language model implementing core next-token prediction with beam-search inspired ranking.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/next_token_prediction/";
+            },},{id: "projects-rnn-amp-lstm-from-scratch",
+          title: 'RNN &amp;amp; LSTM From Scratch',
+          description: "RNN and LSTM with Bahdanau Attention — character-level text generation, vanishing gradient analysis.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/rnn_from_scratch/";
             },},{id: "projects-word2vec-from-scratch",
           title: 'Word2Vec From Scratch',
-          description: "Word2Vec implementation from scratch — skip-gram and CBOW architectures with custom training pipeline.",
+          description: "Word2Vec skip-gram from scratch — embeddings, backpropagation, cosine similarity, custom training.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/word2vec/";
             },},{id: "teachings-data-science-fundamentals",
