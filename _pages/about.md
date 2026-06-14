@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Software Engineer | LLM Infrastructure | Inference Systems
+subtitle: Software Engineer | AI Infrastructure | Inference Optimization
 
 profile:
   align: right
@@ -10,7 +10,6 @@ profile:
   image_circular: false
   more_info: >
     <p>Toronto, Canada</p>
-    <p>anatoliyserputov@gmail.com</p>
 
 selected_papers: false
 social: true
@@ -26,10 +25,10 @@ latest_posts:
   limit: 3
 ---
 
-Software Engineer building **LLM infrastructure at scale**. I design autonomous agent frameworks, optimize inference pipelines, and build the systems that make large language models work in production.
+Software Engineer building **AI infrastructure**. I implement inference optimizations from scratch — KV-cache, PagedAttention, Flash Attention (custom Triton GPU kernels), continuous batching — to understand how LLM serving systems work at the lowest level.
 
-Currently architecting **LLM agent systems with Model Context Protocol (MCP)** — from code-generation compilers to root-cause analysis agents powered by Claude API. Experienced in shipping high-throughput distributed systems with ML-driven workloads.
+I built a [series of 5 from-scratch implementations](https://github.com/aserputov) tracing the evolution from word embeddings to production inference: **Word2Vec → RNN/LSTM → Transformer → GPT-2 → Inference Engine**. Each project loads real weights and produces real results — no toy examples.
 
-When I'm not at work, I'm benchmarking inference engines, profiling KV cache bottlenecks, and quantizing models on Apple Metal. I write about what I learn — deep dives into inference optimization, systems design, and the engineering behind LLM serving.
+At work, I architect **autonomous LLM agent systems** with Model Context Protocol (MCP), design distributed microservice platforms, and build ML-driven infrastructure for high-throughput workloads.
 
-**Focus areas:** Inference optimization, KV cache analysis, quantization (INT4/INT8), continuous batching, autonomous LLM agents, Model Context Protocol, distributed systems.
+I write about what I learn — deep dives into inference optimization, GPU programming, and the engineering behind LLM serving.
