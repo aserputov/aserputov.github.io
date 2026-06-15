@@ -2,16 +2,15 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank
+title: Anatoliy Serputov
 first_name: Anatoliy
 middle_name:
 last_name: Serputov
 contact_note:
 description: >
-  Software Engineer focused on LLM infrastructure, inference optimization, and autonomous agent systems.
+  From-scratch implementations of neural networks and LLM inference optimizations.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: llm, inference, ml-systems, software-engineer, mcp, agents
+keywords: llm, inference, from-scratch, transformer, gpu-kernels
 lang: en
 icon: ⚡
 
@@ -88,8 +87,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Anatoliy's Blog
-blog_description: Deep dives into LLM inference, systems engineering, and ML infrastructure
+blog_name: blog
+blog_description: notes on things I built from scratch
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -258,8 +257,8 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["inference", "llm", "systems", "optimization", "research"]
-display_categories: ["deep-dives"]
+display_tags: ["from-scratch", "inference", "gpu", "transformer"]
+display_categories: ["from-scratch"]
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -393,7 +392,7 @@ enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social: false # enables displaying social links in the navbar on the about page
+enable_navbar_social: true # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position

@@ -3,8 +3,8 @@ layout: post
 title: "KV-Cache: Why Naive Inference is O(n²) and How Caching Fixes It"
 date: 2026-06-10
 description: How KV-cache reduces autoregressive generation from O(n²) to O(n), with from-scratch implementation and 2.6x speedup benchmarks.
-tags: inference kv-cache optimization
-categories: deep-dives
+tags: from-scratch inference
+categories: from-scratch
 ---
 
 ## The Problem

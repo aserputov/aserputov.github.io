@@ -3,8 +3,8 @@ layout: post
 title: "Flash Attention: Writing a GPU Kernel in Triton"
 date: 2026-06-13
 description: How Flash Attention avoids materializing the O(T²) attention matrix by tiling Q×K^T in GPU SRAM, with a from-scratch Triton kernel.
-tags: inference flash-attention triton gpu cuda
-categories: deep-dives
+tags: from-scratch inference gpu
+categories: from-scratch
 ---
 
 ## The O(T²) Problem

@@ -3,8 +3,8 @@ layout: post
 title: "PagedAttention: Virtual Memory for KV-Cache"
 date: 2026-06-11
 description: Why torch.cat creates O(n²) memory copies, and how PagedAttention eliminates them with pre-allocated page pools.
-tags: inference pagedattention vllm optimization
-categories: deep-dives
+tags: from-scratch inference
+categories: from-scratch
 ---
 
 ## The Hidden Cost of torch.cat

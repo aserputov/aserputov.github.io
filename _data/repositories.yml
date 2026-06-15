@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - aserputov
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - aserputov/inference-engine
+  - aserputov/gpt2-from-scratch
+  - aserputov/attention-from-scratch
+  - aserputov/rnn-from-scratch
+  - aserputov/word2vec-from-scratch
