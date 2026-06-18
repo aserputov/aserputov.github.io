@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-prefix-caching-reusing-kv-across-requests",
+        },{id: "post-speculative-decoding-trading-draft-guesses-for-parallel-verification",
+        
+          title: "Speculative Decoding: Trading Draft Guesses for Parallel Verification",
+        
+        description: "How speculative decoding uses a small draft model to propose tokens and a large model to verify them in one pass, achieving 2-3x speedup on GPU.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/speculative-decoding/";
+          
+        },
+      },{id: "post-prefix-caching-reusing-kv-across-requests",
         
           title: "Prefix Caching: Reusing KV Across Requests",
         
