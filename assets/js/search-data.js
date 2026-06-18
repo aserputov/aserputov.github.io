@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-flash-attention-writing-a-gpu-kernel-in-triton",
+        },{id: "post-prefix-caching-reusing-kv-across-requests",
+        
+          title: "Prefix Caching: Reusing KV Across Requests",
+        
+        description: "Why every request recomputes the same system prompt, and how prefix caching eliminates redundant prefill by sharing KV pages.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/prefix-caching/";
+          
+        },
+      },{id: "post-flash-attention-writing-a-gpu-kernel-in-triton",
         
           title: "Flash Attention: Writing a GPU Kernel in Triton",
         
@@ -117,7 +128,7 @@ ninja.data = [{
               window.location.href = "/projects/gpt2_from_scratch/";
             },},{id: "projects-inference-engine",
           title: 'Inference Engine',
-          description: "From-scratch inference engine — KV-cache (2.6x), PagedAttention, Flash Attention (Triton GPU kernel), continuous batching.",
+          description: "From-scratch inference engine — KV-cache (2.6x), PagedAttention, Flash Attention (Triton GPU kernel), prefix caching, continuous batching.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/inference_engine/";
             },},{id: "projects-rnn-amp-lstm-from-scratch",
