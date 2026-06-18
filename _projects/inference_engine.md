@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Inference Engine
-description: From-scratch inference engine — KV-cache (2.6x), PagedAttention, Flash Attention (Triton GPU kernel), continuous batching.
+description: From-scratch inference engine — KV-cache (2.6x), PagedAttention, Flash Attention (Triton GPU kernel), prefix caching, continuous batching.
 img:
 importance: 1
 category: from-scratch
@@ -20,6 +20,9 @@ Pre-allocated page pool eliminates torch.cat's O(n^2) copy overhead. Each new to
 
 **Flash Attention (custom Triton GPU kernel)**
 Tiles Q x K^T computation in GPU SRAM, avoiding the O(T^2) memory attention scores matrix. Implemented online softmax for incremental softmax computation across tiles. Correctness verified against standard attention at all sequence lengths.
+
+**Prefix Caching (reuse KV across requests)**
+Cache KV pages for shared prefixes (system prompts). On cache hit, skip prefill entirely for the cached portion — only compute the unique user query. Built on top of PagedAttention page pool.
 
 **Continuous Batching**
 Background scheduler with per-request KV-cache and output queues. New requests fill finished slots immediately — no static batch waiting.
