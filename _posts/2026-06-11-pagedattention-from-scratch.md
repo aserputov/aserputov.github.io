@@ -16,6 +16,7 @@ k = torch.cat([prev_k, k], dim=2)  # creates NEW tensor, copies ALL previous dat
 ```
 
 Every step:
+
 1. Allocate a new tensor (old size + 1)
 2. Copy the entire old cache into it
 3. Add the one new token

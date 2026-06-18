@@ -31,6 +31,7 @@ Background scheduler with per-request KV-cache and output queues. New requests f
 Token-by-token output via Server-Sent Events with Flask.
 
 ### Benchmark Results
+
 ```
 CPU (Apple M1):
   No cache:    18.8 tokens/sec
@@ -47,7 +48,9 @@ Memory (Flash Attention):
 ```
 
 ### From-Scratch Series
+
 Project 5 of 5: [Word2Vec](https://github.com/aserputov/word2vec-from-scratch) → [RNN/LSTM](https://github.com/aserputov/rnn-from-scratch) → [Transformer](https://github.com/aserputov/attention-from-scratch) → [GPT-2](https://github.com/aserputov/gpt2-from-scratch) → **Inference Engine**
 
 ### Tech Stack
+
 Python, PyTorch, Triton (GPU kernels), CUDA, Flask

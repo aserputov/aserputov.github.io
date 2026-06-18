@@ -27,10 +27,10 @@ In attention, we compute Q, K, V for each token. But K and V for past tokens **n
 
 ## Two Phases
 
-| Phase | Input | Work |
-|-------|-------|------|
-| **Prefill** | Entire prompt (N tokens) | Process all at once, build KV-cache |
-| **Decode** | 1 new token | Compute Q,K,V for new token only, reuse cached K,V |
+| Phase       | Input                    | Work                                               |
+| ----------- | ------------------------ | -------------------------------------------------- |
+| **Prefill** | Entire prompt (N tokens) | Process all at once, build KV-cache                |
+| **Decode**  | 1 new token              | Compute Q,K,V for new token only, reuse cached K,V |
 
 ## Implementation
 

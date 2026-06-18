@@ -16,6 +16,7 @@ The transformer (Vaswani et al., 2017) processes all tokens simultaneously. The 
 ## Self-Attention
 
 Every token produces three vectors from the same input:
+
 - **Query (Q)**: what am I looking for?
 - **Key (K)**: what do I contain?
 - **Value (V)**: what information do I carry?

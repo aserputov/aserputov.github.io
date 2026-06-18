@@ -21,6 +21,7 @@ The simplest approach: give each word a unique index, make a vector of zeros, pu
 ```
 
 Problems:
+
 - Every word is equally distant from every other word
 - "king" is as similar to "queen" as it is to "banana"
 - Vectors are huge and sparse
@@ -61,11 +62,12 @@ similarity("king", "banana") = 0.12
 king - man + woman ≈ queen
 ```
 
-This works because the network learns that "king" and "queen" appear in similar contexts ("the ___ decreed", "the ___ ruled"), so their vectors end up nearby.
+This works because the network learns that "king" and "queen" appear in similar contexts ("the **_ decreed", "the _** ruled"), so their vectors end up nearby.
 
 ## Implementation Details
 
 The from-scratch version includes:
+
 - Embedding lookup (not one-hot × matrix, just index the row directly)
 - Negative sampling for efficient training
 - SGD with manual gradient computation

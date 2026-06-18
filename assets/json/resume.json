@@ -69,9 +69,7 @@
       "startDate": "2022-03-01",
       "endDate": "2022-12-01",
       "summary": "Cloud cost optimization and infrastructure scaling.",
-      "highlights": [
-        "Reduced AWS infra cost by ~8% through ECS scaling, load balancer rebalancing, and VPC optimization"
-      ]
+      "highlights": ["Reduced AWS infra cost by ~8% through ECS scaling, load balancer rebalancing, and VPC optimization"]
     }
   ],
   "education": [

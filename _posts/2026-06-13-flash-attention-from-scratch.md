@@ -80,24 +80,25 @@ def _flash_attn_fwd(Q, K, V, Out, ...):
 
 **Attention kernel (standard vs flash):**
 
-| Seq Length | Standard | Flash | Match |
-|-----------|----------|-------|-------|
-| 128 | 0.16ms | 0.30ms | yes |
-| 256 | 0.32ms | 0.85ms | yes |
-| 512 | 0.88ms | 2.16ms | yes |
-| 1024 | 2.66ms | 7.78ms | yes |
+| Seq Length | Standard | Flash  | Match |
+| ---------- | -------- | ------ | ----- |
+| 128        | 0.16ms   | 0.30ms | yes   |
+| 256        | 0.32ms   | 0.85ms | yes   |
+| 512        | 0.88ms   | 2.16ms | yes   |
+| 1024       | 2.66ms   | 7.78ms | yes   |
 
 Flash is **slower** at GPT-2's short context (max 1024) because the T×T matrix fits in GPU memory. The real win is **memory**:
 
-| Seq Length | Standard | Flash | Savings |
-|-----------|----------|-------|---------|
-| 256 | 3.0 MB | 0.188 MB | 16x |
-| 512 | 12.0 MB | 0.188 MB | 64x |
-| 1024 | 48.0 MB | 0.188 MB | 256x |
+| Seq Length | Standard | Flash    | Savings |
+| ---------- | -------- | -------- | ------- |
+| 256        | 3.0 MB   | 0.188 MB | 16x     |
+| 512        | 12.0 MB  | 0.188 MB | 64x     |
+| 1024       | 48.0 MB  | 0.188 MB | 256x    |
 
 Flash tile is always 64×64 = constant memory, regardless of sequence length.
 
 **Full generation:**
+
 ```
 GPU (Flash + KV-cache):  51.5 tokens/sec
 CPU (KV-cache only):     18.2 tokens/sec
@@ -107,6 +108,7 @@ GPU speedup:             2.8x
 ## Model Design
 
 Flash Attention optimizes **prefill** (processing the full prompt). During decode, Q is just 1 token — no T×T matrix to tile. So the model uses:
+
 - **Prefill**: Flash Attention (Triton kernel)
 - **Decode**: Standard attention with KV-cache
 
