@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-speculative-decoding-trading-draft-guesses-for-parallel-verification",
+        },{id: "post-lora-fine-tuning-0-12-of-the-parameters",
+        
+          title: "LoRA: Fine-Tuning 0.12% of the Parameters",
+        
+        description: "How LoRA freezes 124M base parameters and trains only 147K by adding low-rank A,B matrices alongside Q and V projections.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/lora-from-scratch/";
+          
+        },
+      },{id: "post-speculative-decoding-trading-draft-guesses-for-parallel-verification",
         
           title: "Speculative Decoding: Trading Draft Guesses for Parallel Verification",
         
