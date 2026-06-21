@@ -34,6 +34,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/rlhf-from-scratch/";
           
         },
+      },{id: "post-mixture-of-experts-8x-parameters-same-compute",
+        
+          title: "Mixture of Experts: 8x Parameters, Same Compute",
+        
+        description: "How MoE replaces the dense FFN with multiple experts and a learned router, achieving large model quality at small model speed.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/moe-from-scratch/";
+          
+        },
       },{id: "post-lora-fine-tuning-0-12-of-the-parameters",
         
           title: "LoRA: Fine-Tuning 0.12% of the Parameters",
