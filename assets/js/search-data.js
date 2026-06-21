@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-lora-fine-tuning-0-12-of-the-parameters",
+        },{id: "post-rlhf-from-text-predictor-to-assistant",
+        
+          title: "RLHF: From Text Predictor to Assistant",
+        
+        description: "How RLHF turns a language model into an assistant — reward model training on human preferences, PPO optimization, and the full pipeline from scratch.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/rlhf-from-scratch/";
+          
+        },
+      },{id: "post-lora-fine-tuning-0-12-of-the-parameters",
         
           title: "LoRA: Fine-Tuning 0.12% of the Parameters",
         
