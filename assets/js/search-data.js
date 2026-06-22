@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-rlhf-from-text-predictor-to-assistant",
+        },{id: "post-reasoning-models-teaching-gpt-2-to-think-step-by-step",
+        
+          title: "Reasoning Models: Teaching GPT-2 to Think Step by Step",
+        
+        description: "How reasoning models work — Chain-of-Thought SFT, Process Reward Models, Best-of-N selection, and tree search, implemented from scratch.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/reasoning-from-scratch/";
+          
+        },
+      },{id: "post-rlhf-from-text-predictor-to-assistant",
         
           title: "RLHF: From Text Predictor to Assistant",
         
