@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-reasoning-models-teaching-gpt-2-to-think-step-by-step",
+        },{id: "post-your-llm-doesn-39-t-forget-instructions-it-just-stops-caring",
+        
+          title: "Your LLM Doesn&#39;t Forget Instructions — It Just Stops Caring",
+        
+        description: "Measuring system prompt adherence degradation on Qwen 72B across long conversations. Spending $35 on GPUs to discover that attention is not reasoning.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/attention-degradation/";
+          
+        },
+      },{id: "post-reasoning-models-teaching-gpt-2-to-think-step-by-step",
         
           title: "Reasoning Models: Teaching GPT-2 to Think Step by Step",
         
